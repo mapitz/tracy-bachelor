@@ -1,0 +1,69 @@
+% Funktioniert leider nicht
+%\RequirePackage[ngerman=ngerman-x-20080601]{hyphsubst}
+%\RequirePackage{fix-cm} % macht, dass die Überschriften bei Verwendung von cm-super und fontenc T1 (EC-Fonts) fett sind
+%
+% Headerdatei der Bachelorarbeit
+%
+%
+
+\documentclass[
+a4paper,
+12pt,
+%twoside,
+%openright,
+parskip,
+%draft,
+chapterprefix,
+]{scrreprt}
+
+%Direkt Eingabe von ü,ä,ö,ß ermöglichen
+%Sollte immer zuerst geladen werden.
+\usepackage[utf8]{inputenc}
+
+%Kapitel anschreiben als Kapitel
+\usepackage{moreverb}
+
+%Textgestaltung
+\usepackage[T1]{fontenc} 	% Für korrekte Trennung von Wörtern mit Umlaut
+\usepackage[ngerman]{babel} 	% Deutsche Trennregeln
+\usepackage{lmodern}	 	% Verbesserter Standardfont als alternative zu cm-super
+\usepackage{textcomp}		% zum Darstellen des µs im Text
+\usepackage{verbatim}		% Darstellung wie Eingabe
+\usepackage[babel,german=quotes]{csquotes} 	% Deutsche Anführungszeichen verwenden
+
+%Textsatz
+\usepackage{microtype}  % verbesserter optischer Randausgleich
+\setlength{\parindent}{0pt} % Einzug bei Absätzen
+\setlength{\parskip}{5pt}	% vertikaler Abstand zwischen Absätzen
+%Schusterjungen und Hurenkinder
+\clubpenalty = 10000		% Diese drei Einstellungen verhindern diese gänzlich!
+\widowpenalty = 10000		% Sind mit vorsicht zu genießen!
+\displaywidowpenalty = 10000
+
+%Zum Einbinden von Grafiken
+\usepackage{graphicx}		%immer benötigtes Paket
+\usepackage{subfigure}		%mehrere Bilder in einer Floatumgebung
+%\usepackage{floatflt}		%gleitende Bilder mit Textumlauf am Seitenrand
+
+%Chemie / Formeln 
+%\usepackage{chemarrow}		%Beschriftung von Reachts-Links-Pfeil oben und unten
+%\usepackage{amssymb,amsmath}%Zum Splitten von Formeln
+%\usepackage{chemfig} 		%Darstellen von Ladungen über dem Atom
+
+%Für Tabellen
+\usepackage{array}
+\usepackage{booktabs} %schönere Tabellen (toprule, midrule, ...)
+\usepackage{multirow} %zeilen verbinden
+\usepackage{supertabular}
+\usepackage{longtable}% Seitenübergreifende tabellen
+
+% Für Seiten im Querformati
+\usepackage{pdflscape}
+
+% Für Zeilennummerierung
+% Der Modus ist running, das heißt, dass die Zeilennummern unabhängig von der Seitenzahl immer weiter gezählt werden.
+\usepackage[running]{lineno}
+
+%Für Hyperlinks (\url und \href)
+%Sollte als letztes geladen werden
+\usepackage{hyperref}

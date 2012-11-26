@@ -1,0 +1,43 @@
+%
+%
+% Hauptdatei der Bachelorarbeit
+% Inklusion im Kindergarten
+%
+%
+\input{header}
+% Wenn nur einzelne Kapitel erstellt werden sollen, hier eintragen
+%\includeonly{anhang}
+\begin{document}
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+
+%Kapitel
+%\include{einleitung}
+\include{kindergarten}
+\include{inklusion}
+\include{forschung}
+
+\include{literatur}
+
+\newpage
+%\pagenumbering{roman}
+
+% Anhang
+\appendix
+\include{anhang}
+%\input{eidesstattliche_erklaerung}
+%\listoftables
+%\listoffigures
+%\renewcommand{\glossaryname}{Glossar}
+%\printglossary
+%\newpage
+%\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+%\bibliography{referenzen}
+%\bibliographystyle{geralpha}
+
+\end{document}
