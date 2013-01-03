@@ -8,11 +8,12 @@
 
 \documentclass[
 a4paper,
-12pt,
+11pt,
 %twoside,
 %openright,
 parskip,
 %draft,
+ngerman,
 chapterprefix,
 ]{scrreprt}
 
@@ -68,3 +69,6 @@ chapterprefix,
 %Für Hyperlinks (\url und \href)
 %Sollte als letztes geladen werden
 \usepackage{hyperref}
+
+% Neue Kommandos
+\newenvironment{zitat}{\begin{quote}}{\end{quote}}
