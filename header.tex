@@ -8,7 +8,7 @@
 
 \documentclass[
 a4paper,
-11pt,
+12pt,
 %twoside,
 %openright,
 parskip,
@@ -27,7 +27,7 @@ chapterprefix,
 %Textgestaltung
 \usepackage[T1]{fontenc} 	% Für korrekte Trennung von Wörtern mit Umlaut
 \usepackage[ngerman]{babel} 	% Deutsche Trennregeln
-\usepackage{lmodern}	 	% Verbesserter Standardfont als alternative zu cm-super
+\usepackage{lmodern}	 		% Verbesserter Standardfont als alternative zu cm-super
 \usepackage{textcomp}		% zum Darstellen des µs im Text
 \usepackage{verbatim}		% Darstellung wie Eingabe
 \usepackage[babel,german=quotes]{csquotes} 	% Deutsche Anführungszeichen verwenden
@@ -37,6 +37,7 @@ chapterprefix,
 \usepackage{microtype}  % verbesserter optischer Randausgleich
 \setlength{\parindent}{0pt} % Einzug bei Absätzen
 \setlength{\parskip}{5pt}	% vertikaler Abstand zwischen Absätzen
+
 %Schusterjungen und Hurenkinder
 \clubpenalty = 10000		% Diese drei Einstellungen verhindern diese gänzlich!
 \widowpenalty = 10000		% Sind mit vorsicht zu genießen!
@@ -71,4 +72,4 @@ chapterprefix,
 \usepackage{hyperref}
 
 % Neue Kommandos
-\newenvironment{zitat}{\begin{quote}}{\end{quote}}
+\newenvironment{zitat}{\small\begin{quote}}{\end{quote}}
