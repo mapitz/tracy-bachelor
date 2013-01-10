@@ -71,5 +71,26 @@ chapterprefix,
 %Sollte als letztes geladen werden
 \usepackage{hyperref}
 
+% Einbinden von PDFs
+\usepackage{pdfpages}
+
 % Neue Kommandos
+% ==============
+
+% Zitatumgebung
 \newenvironment{zitat}{\small\begin{quote}}{\end{quote}}
+
+% Tabellenkopf für Extraktionstabellen
+\newcommand{\tabhead}{\toprule
+\textbf{Dimension} & \textbf{Sachverhalt\newline(Aussagen konzentriert)} & \textbf{Ursache} & \textbf{Wirkung} & \textbf{Quelle}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Dimension} & \textbf{Sachverhalt\newline(Aussagen konzentriert)} & \textbf{Ursache} & \textbf{Wirkung} & \textbf{Quelle}\\
+\midrule
+\endhead
+\noalign{\vskip-2.5pt}
+\bottomrule
+\endfoot}
+% Formatierung der Dimension
+\newcommand{\dimension}[1]{\multicolumn{5}{l}{\emph{#1}}\\ \midrule}
