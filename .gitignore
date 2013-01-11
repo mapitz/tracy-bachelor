@@ -1,0 +1,13 @@
+#ignore latex compiling files
+*.aux
+*.pdf
+*.log
+*.toc
+*.out
+*.lot
+*.synctex.gz
+*.*~
+# Diese Datei
+# .gitignore
+# Ubuntu One conflict files
+*.*conflict
